@@ -1,0 +1,170 @@
+:root{
+    --bg-blue: #053C5E;
+    --mid-blue: #1F7A8C;
+    --light-blue: #BFDBF7;
+    --blue-hover:#042D47;
+    --red1: #A31621;
+    --red2: #DB222A;
+}
+
+@media screen and (min-width: 300px){
+    /**********************************
+        Modal Section min-width: 300px
+    **********************************/
+    
+    .modal{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg-blue);
+        position: relative;
+    }
+    .modal-content{
+         margin: 0 2rem;
+    }
+    .modal-open-btn{
+        background-color: var(--mid-blue);
+        color: var(--light-blue);
+        font-size: 2rem;
+        padding: 3rem;
+        border: 0;
+        border-radius: .5rem;
+        box-shadow: 2rem 2rem 4rem rgba(0,0,0,0.5);
+        transition: .7s ease-in-out;
+    }
+    .modal-open-btn:hover,
+    .modal-open-btn:focus{
+        background-color: var(--blue-hover);
+        border: .5rem solid var(--mid-blue);
+        cursor: pointer;
+    }
+
+    /********************************************
+                Actual Modal Pop - up
+    *********************************************/
+    .modal-bg, .modal-modal-content{
+        display: none;
+    }
+    .modal-bg.active{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.7);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 100;
+    }
+    .modal-modal-content.active{
+        display: block;
+        background-color: var(--light-blue);
+        color: var(--blue-hover);
+        height: auto;
+        width: 35rem;
+        padding: 1.5rem 2rem;
+        border-radius: .5rem;
+        z-index: inherit;
+        position: relative;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .modal-modal-revealer{
+        animation: reveal .75s ease-in-out forwards;
+    }
+    @keyframes reveal {
+        from {
+            opacity: 0;
+            visibility: hidden;
+        }
+        to{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    .modal-modal-closer{
+        border: .1rem solid var(--blue-hover);
+        border-radius: .5rem;
+        background-color: transparent;
+        top: 1rem;
+        right: 1rem;
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        cursor: pointer;
+    }
+    .modal-modal-closer:hover,
+    .modal-modal-closer:focus{
+        background-color: var(--blue-hover);
+    }
+    .modal-modal-closer:hover .modal-modal-close,
+    .modal-modal-closer:focus .modal-modal-close,
+    .modal-modal-closer:hover .modal-modal-close2,
+    .modal-modal-closer:focus .modal-modal-close2{
+        background-color: var(--light-blue);    
+    }
+
+    .modal-modal-close,
+    .modal-modal-close2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 2rem;
+        height: .3rem;
+        border-radius: .5rem;
+        background-color: var(--blue-hover);
+    }
+    .modal-modal-close{
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    .modal-modal-close2{
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+   
+    .modal-modal-text{
+        margin-top: 4rem;
+    }
+    .modal-modal-text h1{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .modal-modal-text p{
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    
+
+}
+
+@media screen and (min-width: 768px){
+    /*****************************
+        Navigation min-width 768px
+    *****************************/
+    /*.header-content{
+        margin: 0 7rem;
+    }
+    .menu-btn{
+        display: none;
+    }
+    nav{
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .menu-content{
+        display: flex;
+    }
+    li:nth-child(2) .menu-link{
+       border-radius: 0 .5rem .5rem 0;
+    }*/
+
+}
