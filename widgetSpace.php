@@ -34,8 +34,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href = "#" class = "menu-link" onclick = "alert('Currently testing the code across multiple browsers, both desktop and mobile. Project code will be available on GitHub soon.');">
-                                view code
+                            <a href = "https://github.com/dvereen1/WidgetSpace" class = "menu-link">
+                                View Code
                             </a>
                         </li>
                         <li>
