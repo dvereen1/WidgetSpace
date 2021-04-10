@@ -1,5 +1,6 @@
 <?php include_once('headNoNav.php');?> 
             <title>The Widget Space</title>
+            <base href = "/portfolio/widgetSpace/">
             <link href = "/CSS/allProjectsModal.css" rel = "stylesheet" type = "text/css">
             <link href = "widgetSpace.css" rel = "stylesheet" type = "text/css">
             <link href = "accordianDropDown/accordianDropDown.css" rel = "stylesheet" type = "text/css">

@@ -26,7 +26,7 @@
      * @param {String} img - the path to the image to change the parent container background to
      */
     function setBackground(ogParent, img){
-        ogParent.style.backgroundImage = "url('accordianDropDown/"+ img +"')";
+        ogParent.style.backgroundImage = "url('accordianDropDown/imgs/"+ img +"')";
         ogParent.style.backgroundSize = "cover";
         ogParent.style.backgroundPosition = "center";
         ogParent.style.backgroundRepeat = "no-repeat";
